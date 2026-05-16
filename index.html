@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Retail Management System</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #2563eb;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 50px;
+      text-align: center;
+      background: white;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      padding: 30px 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #1e3a8a;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+      background: white;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background: #2563eb;
+      color: white;
+    }
+
+    form {
+      background: white;
+      padding: 25px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    form button:hover {
+      background: #1e40af;
+    }
+
+    footer {
+      text-align: center;
+      background: #1e3a8a;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .chart {
+      margin-top: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .bar {
+      height: 25px;
+      margin: 10px 0;
+      background: #2563eb;
+      color: white;
+      text-align: right;
+      padding-right: 10px;
+      line-height: 25px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smart Retail Management System</h1>
+    <p>HTML5 Project for Inventory and Sales Management</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#inventory">Inventory</a>
+    <a href="#sales">Sales</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Welcome to Smart Retail Dashboard</h1>
+    <p>Manage inventory, track sales, and analyze business performance efficiently.</p>
+  </section>
+
+  <div class="container">
+
+    <section id="features">
+      <h2>Project Features</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Inventory Tracking</h3>
+          <p>Monitor stock availability and update inventory records easily.</p>
+        </div>
+
+        <div class="card">
+          <h3>Sales Analysis</h3>
+          <p>Analyze daily and monthly sales performance using reports.</p>
+        </div>
+
+        <div class="card">
+          <h3>Customer Management</h3>
+          <p>Maintain customer purchase records and improve engagement.</p>
+        </div>
+
+        <div class="card">
+          <h3>Responsive Design</h3>
+          <p>Accessible on desktop, tablet, and mobile devices.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="inventory">
+      <h2 style="margin-top:40px;">Inventory Details</h2>
+      <table>
+        <tr>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Category</th>
+          <th>Stock</th>
+          <th>Price</th>
+        </tr>
+
+        <tr>
+          <td>101</td>
+          <td>Rice Bag</td>
+          <td>Groceries</td>
+          <td>120</td>
+          <td>₹1200</td>
+        </tr>
+
+        <tr>
+          <td>102</td>
+          <td>Cooking Oil</td>
+          <td>Essentials</td>
+          <td>75</td>
+          <td>₹180</td>
+        </tr>
+
+        <tr>
+          <td>103</td>
+          <td>Biscuits</td>
+          <td>Snacks</td>
+          <td>200</td>
+          <td>₹20</td>
+        </tr>
+
+        <tr>
+          <td>104</td>
+          <td>Milk Pack</td>
+          <td>Dairy</td>
+          <td>90</td>
+          <td>₹30</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="sales" class="chart">
+      <h2>Monthly Sales Report</h2>
+
+      <div class="bar" style="width:85%;">January - 85%</div>
+      <div class="bar" style="width:70%;">February - 70%</div>
+      <div class="bar" style="width:90%;">March - 90%</div>
+      <div class="bar" style="width:65%;">April - 65%</div>
+    </section>
+
+    <section>
+      <h2 style="margin-top:40px;">Add New Product</h2>
+
+      <form onsubmit="addProduct(event)">
+        <input type="text" id="productName" placeholder="Enter Product Name" required>
+
+        <input type="text" id="category" placeholder="Enter Category" required>
+
+        <input type="number" id="stock" placeholder="Enter Stock Quantity" required>
+
+        <input type="number" id="price" placeholder="Enter Price" required>
+
+        <button type="submit">Add Product</button>
+      </form>
+
+      <p id="message" style="margin-top:15px;color:green;font-weight:bold;"></p>
+    </section>
+
+    <section id="contact">
+      <h2 style="margin-top:40px;">Contact Information</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Email</h3>
+          <p>support@smartretail.com</p>
+        </div>
+
+        <div class="card">
+          <h3>Phone</h3>
+          <p>+91 9876543210</p>
+        </div>
+
+        <div class="card">
+          <h3>Location</h3>
+          <p>Andhra Pradesh, India</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Smart Retail Management System | HTML5 Project</p>
+  </footer>
+
+  <script>
+    function addProduct(event) {
+      event.preventDefault();
+
+      let productName = document.getElementById("productName").value;
+      let category = document.getElementById("category").value;
+      let stock = document.getElementById("stock").value;
+      let price = document.getElementById("price").value;
+
+      document.getElementById("message").innerHTML =
+        "Product Added Successfully: " + productName;
+
+      console.log(productName, category, stock, price);
+    }
+  </script>
+
+</body>
+</html>
